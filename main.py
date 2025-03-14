@@ -146,4 +146,4 @@ with nethsm.connect(
     host="nethsmdemo.nitrokey.com",
     auth=nethsm.Authentication(username="admin", password=admin_passphrase),
 ) as client:
-    client.set_key_certificate(key, certificate.public_bytes(Encoding.DER))
+    client.set_key_certificate(key, certificate.public_bytes(Encoding.PEM))
